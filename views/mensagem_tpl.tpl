@@ -34,6 +34,9 @@
 			left:25px;
 			height: 45px;
 		}
+		.row{
+			word-wrap: break-word;
+		}
 	</style>
 </head>
 <body>
@@ -68,13 +71,13 @@
 					% for id in range(len(mensagens)):
 						<a href="/mensagem/{{id}}" class="list-group-item-action list-group-item">
 							<div class="row">
-								<div class="col">
+								<div class="col-3">
 									{{mensagens[id].usuario}}
 								</div>
 								<div class="col-5">
 									{{mensagens[id].titulo}}
 								</div>
-								<div class="col">
+								<div class="col-4">
 									{{mensagens[id].date}}
 								</div>
 							</div>
